@@ -141,30 +141,46 @@ The core innovation in this project is **`mediagent`** — the agentic AI chatbo
 * API keys for any LLM services you choose (e.g., OpenAI)
 * Microphone/speaker for voice input/output (optional)
 
-### 🧩 Installation
+<h2>⚙️ Installation & Setup</h2>
 
-1. **Clone the repository**
+<h3>1️⃣ Clone the Repository</h3>
+<pre>
+git clone https://github.com/AbhaySingh71/AI-Powered-Healthcare-Intelligence-System.git
+cd AI-Powered-Healthcare-Intelligence-System
+</pre>
 
-   ```bash
-   git clone https://github.com/L-ikitha/Agentic-Healthcare-Assistant.git
-   cd Agentic-Healthcare-Assistant
-   ```
+<h3>2️⃣ Set Up the Virtual Environment</h3>
+<pre>
+python -m venv venv
+source venv/bin/activate  # On macOS/Linux
+venv\Scripts\activate  # On Windows
+</pre>
 
-2. **Install dependencies**
+<h3>3️⃣ Install Dependencies</h3>
+<pre>
+pip install -r requirements.txt
+</pre>
 
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. **Set up environment variables**
+<h3>4️⃣ Set Up Environment Variables</h3>
+<p>Create a <code>.env</code> file and add:</p>
+<pre>
+**Set up environment variables**
    Create a `.env` file
   # .env
     * OPENAI_API_KEY=xxxx
     * GROQ_API_KEY=xxxxx
     * GOOGLE_MAPS_API_KEY =xxxx
    * Provide this keys in env file
+</pre>
+<p>Ensure it is added to GitHub Secrets when deploying.</p>
+
+<h3>5️⃣ Run the Application</h3>
+<pre>
+streamlit run home.py
+</pre>
 
 ---
+
 
 ## 🚀 Usage
 
